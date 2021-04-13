@@ -1,13 +1,4 @@
 /* @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro:300,400"); */
-
-
-
-
-
-
-
-
-
 .vue-form {
   font-size: 16px;
   width: 500px;
@@ -72,9 +63,6 @@
 }
 .vue-form .select {
   position: relative;
-}
-
-    no-repeat center center;
   pointer-events: none;
 }
 .vue-form select {
@@ -97,9 +85,7 @@
   position: relative;
   user-select: none;
   margin: 0 26px 16px 0;
-  float: left;
 }
-
 .vue-form input[type="submit"] {
   border: none;
   background: #2c3e50;

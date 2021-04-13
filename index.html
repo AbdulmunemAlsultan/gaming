@@ -16,33 +16,21 @@
 		integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
 		crossorigin="anonymous"></script>
 	<script>
-		//function SubForm (){
-			//$.ajax({
-				//url:"https://api.apispreadsheets.com/data/10842/",
-				//type:"post",
-				//data:$("#myForm").serializeArray(),
-				//success: function(){
-				//	alert("Form Data Submitted :)")
-				//},
-				//error: function(){
-				//	alert("There was an error :(")
-				//}
-			//});
-		//}
+		function SubForm (){
+			$.ajax({
+				url:"https://api.apispreadsheets.com/data/10842/",
+				type:"post",
+				data:$("#myForm").serializeArray(),
+				success: function(){
+					alert("Form Data Submitted :)")
+				},
+			error: function(){
+					alert("There was an error :(")
+				}
+			});
+		}
 		
-		fetch("https://api.apispreadsheets.com/data/10842/", {
-	method: "POST",
-	body: JSON.stringify({"data": {"name":"value","email":"value"}}),
-}).then(res =>{
-	if (res.status === 201){
-		// SUCCESS
-		alert("Form Data Submitted :)")
-	}
-	else{
-		// ERROR
-		alert("There was an error :(")
-	}
-})
+
 	</script>
 	<link rel="stylesheet" type="text/css" href="form.css">
 </head>
@@ -67,10 +55,11 @@
                         <label class="label" for="email">Email</label>
                         <input type="email" name="email" id="email" style="width:50%" required>
                       </div>
-                     <a href="index1.html"><button onclick='SubForm()'>Submit</button></a>
+                     
                  </fieldset>
             </form>		
-			</div>
+			</div>\
+	     <button onclick='SubForm()'>Submit  <a href="index1.html"> </a> </button>
      
             </div>
     
